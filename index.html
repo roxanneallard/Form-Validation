@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html>
+  <head>
+      <title> Form validation </title>
+
+      <meta charset="utf-8" />
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <script type ="text/javascript" src="js/jquery.min.js"> </script>
+
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+  </head>
+
+  <body>
+
+    <div class=container>
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="header"> So you think you can form validate? </h1>
+      </div>
+
+      <div class="col-md-8 col-md-offset-2" id="error">
+      </div>
+
+      <form id="validationForm">
+
+        <div class="col-md-4 col-md-offset-2">
+          <label for="voornaam" class="contact-label">Voornaam</label>
+          <input type="text" class="form-control input-field" id="voornaam" name="voornaam" placeholder="Vul uw voornaam in">
+        </div>
+        <div class="col-md-4">
+          <label for="achternaam" class="contact-label">Achternaam</label>
+          <input type="text" class="form-control input-field" id="achternaam" name="achternaam" placeholder="Vul uw achternaam in">
+        </div>
+
+        <div class="col-md-4 col-md-offset-2">
+          <label for="emailadres" class="contact-label">E-mailadres</label>
+          <input type="emailadress" class="form-control input-field" id="emailadres" name="emailadres" placeholder="Vul uw e-mailadres in">
+        </div>
+        <div class="col-md-4">
+          <label for="telefoonnummer" class="contact-label">Telefoonnummer</label>
+          <input type="phonenumber" class="form-control input-field" id="telefoonnummer" name="telefoonnummer" placeholder="Vul uw telefoonnummer in">
+        </div>
+
+        <div class="col-md-4 col-md-offset-2">
+          <label for="wachtwoord" class="contact-label">Wachtwoord</label>
+          <input type="password" class="form-control input-field" id="wachtwoord" name="wachtwoord" placeholder="Vul uw wachtwoord in">
+        </div>
+        <div class="col-md-4">
+          <label for="wachtwoordbevestigen" class="contact-label">Wachtwoord bevestigen</label>
+          <input type="password" class="form-control input-field" id="wachtwoordbevestigen" name="wachtwoord bevestigen" placeholder="Vul uw wachtwoord nogmaals in">
+        </div>
+
+        <div class="col-md-4 col-md-offset-4">
+          <input type="submit" class="button" id="submit" name="verzenden">
+        </div>
+
+      </form>
+
+    </div><!-- container -->
+
+    <!-- Scripts -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- jQuery (necessary for custom Javascript) -->
+        <script src="js/custom.js"></script>
+
+        <!-- jQuery (necessary for Typeahead plugin) -->
+        <script src="js/typeahead.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
